@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Bot</title>
+	<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<table border="1" id="weatherBot">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Temperature</th>
+				<th>Humidity</th>
+				<th>Wind Speed</th>
+				<th>Main</th>
+				<th>Desc</th>
+				<th>Lat / Long</th>
+			</tr>
+		</thead>
+		<tbody id="tableBody">
+			<tr>
+				<th>City</th>
+				<td>22</td>
+				<td>50</td>
+				<td>80</td>
+				<td>Chilled</td>
+				<td>Cold and chilled Brizzle</td>
+				<td>100 102</td>
+			</tr>
+		</tbody>
+	</table>
+	<br />
+
+	<div>
+		<input style="width: 400px" type="text" placeholder="Enter Name of the City to check the weather" id="myInput"/>
+		<button type="button" onclick="fetchCurrentWeather()">Search !!</button>
+	</div>
+	<div>
+		<label id="result"></label>
+	</div>
+
+</body>
+</html>
